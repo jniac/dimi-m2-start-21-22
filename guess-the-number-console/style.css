@@ -27,8 +27,8 @@ h1 {
 p span {
   font-family: 'Inconsolata', monospace;
   display: block;
-  background-color: #fff3;
-  border: solid 2px white;
+  background-color: #ff572247;
+  border: solid 2px #ff5722;
   border-radius: 16px;
   padding: 16px;
 }
