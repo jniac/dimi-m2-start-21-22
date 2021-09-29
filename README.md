@@ -88,9 +88,9 @@ L'installation de git peut être complexe sur les Macbook M1 (dernière généra
 
 - Node.js permet l'exécution de code javascript en DEHORS d'un navigateur, au niveau du système (OS).
 
-- Avec Node.js vient [npm](http://npmjs.com/) (NPM pour Node Package Manager), une solution de partage (hébergement) de code et d'outil réalisé en javascript. Cela simplifie grandement l'utilisation de code externes.
+- Avec Node.js vient [npm](http://npmjs.com/) (NPM pour Node Package Manager), une solution de partage (hébergement) de code et d'outils réalisés en javascript. Cela simplifie grandement l'utilisation de librairies (node modules).
 
-- Indispensable pour faire développer avec [react](https://reactjs.org/).
+- Indispensable pour développer avec [react](https://reactjs.org/).
 
 #### Attention !
 
