@@ -23,6 +23,9 @@ body {
 h1 {
   font-size: 96px;
 }
+h2 {
+  font-size: 48px;
+}
 
 p span {
   font-family: 'Inconsolata', monospace;
