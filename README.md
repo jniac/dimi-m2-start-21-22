@@ -76,6 +76,10 @@ L'installation de git peut être complexe sur les Macbook M1 (dernière généra
 
 - Permet la collaboration (possibilité d'inviter des collaborateurs).
 
+- Avec [GitHub Pages](https://pages.github.com/) il est possible de mettre en ligne des pages web (pas uniquement le code source, mais le résultat donc).
+
+<br><br>
+
 ### 4. Node.js
 
 - [Node.js homepage](https://nodejs.org/)
@@ -84,7 +88,7 @@ L'installation de git peut être complexe sur les Macbook M1 (dernière généra
 
 - Node.js permet l'exécution de code javascript en DEHORS d'un navigateur, au niveau du système (OS).
 
-- Avec Node.js vient [npm](http://npmjs.com/) (NPM pour Node Package Manager), une solution de partage (hébergement) de code et d'outil réalisé en javascript.
+- Avec Node.js vient [npm](http://npmjs.com/) (NPM pour Node Package Manager), une solution de partage (hébergement) de code et d'outil réalisé en javascript. Cela simplifie grandement l'utilisation de code externes.
 
 - Indispensable pour faire développer avec [react](https://reactjs.org/).
 
@@ -101,6 +105,8 @@ Exemple de résultat possible :
 v16.2.0
 ```
 
+<br><br>
+
 ### 5. Google Chrome Dev
 
 - [Chromimum projects](https://www.chromium.org/getting-involved/dev-channel)
@@ -111,9 +117,13 @@ v16.2.0
 
 #### Pourquoi ?
 
-- Offre un environnement chromium vierge (pas d'extensions indésirables) pour tester les expériences web.
+- Une application dédiée au dev. Offre un environnement chromium vierge pour tester les expériences web.
+
+- Évite les extensions indésirables (susceptibles par exemple de créer des erreurs dans la console dont vous n'être pas l'auteur-e).
 
 - Permet de tester certaines fonctionnalités encore en développement (par exemple WebGPU).
+
+<br><br>
 
 ## autres
 
