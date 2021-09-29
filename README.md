@@ -1,6 +1,11 @@
 # dimi-start-2021
 
-[projet de référence (Joseph Merdrignac)](https://GitHub.com/jniac/dimi-start-2021)
+[projet de référence (Joseph Merdrignac)](https://github.com/jniac/dimi-start-2021)
+
+Aperçu des projets (GitHub Pages) : 
+- [guess-the-number-console](https://jniac.github.io/dimi-start-2021/guess-the-number-console/)
+
+<br><br>
 
 ## pré-requis
 
