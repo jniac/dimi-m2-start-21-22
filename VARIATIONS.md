@@ -1,0 +1,11 @@
+# Variations possibles :
+- l'ordinateur change le nombre mystère 
+  - sur certaines valeurs (ex nombres pairs)
+  - sur certains événements (ex : au bout d'un certain temps)
+- utiliser / afficher un chronomètre 
+- changer le design
+  - en fonction du résultat (ex: de l'écart avec le nombre mystère)
+  - pour faire chier (ex : nouvelle typo à chaque saisie, code couleur illisible)
+  - utiliser des vidéos, des animations (Motion design)
+- changer le Gameplay (bouton / click, physique (golf))
+- exagérer les feed-back (cameshake, particules)
