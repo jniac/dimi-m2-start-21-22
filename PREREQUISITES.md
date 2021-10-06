@@ -87,28 +87,43 @@ git config --global user.email "mon.email@domain.com"
 
 - Avec [GitHub Pages](https://pages.github.com/) il est possible de mettre en ligne des pages web (pas uniquement le code source, mais le résultat donc).
 
-Associer un repo github avec un projet local (ouvert dans VSCode) : 
+### Comment ?
+
+Pour associer un repo github avec un projet local (ouvert dans VSCode) : 
+
 1. Initialiser la configuration globale de git avec `user.name` & `user.email`
-[cf user.name & user.email](#user-name-user-email)
+  Cette étape doit être réalisé une fois (seulement) par ordinateur.
+  [cf user.name & user.email](#user-name-user-email)
 
 2. Se connecter sur github.com et créer un nouveau repository
-<img height="200" src="https://user-images.githubusercontent.com/11039919/136216574-02c35171-9022-4c66-ab74-95059fa1b9a1.png">
-Le nouveau repository DOIT ÊTRE VIDE à la création (ne pas cocher les options "Add a README file" etc).
+  <img height="200" src="https://user-images.githubusercontent.com/11039919/136216574-02c35171-9022-4c66-ab74-95059fa1b9a1.png">
+  Le nouveau repository DOIT ÊTRE VIDE à la création (ne pas cocher les options "Add a README file" etc).
 
 3. Initialiser via le terminal de VSCode.
-Le projet vide peut à présent être synchronisé avec votre projet local (ouvert dans VSCode).
 
-La page du repository sur GitHub propose les lignes suivantes :
-```
-echo "# xxx" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:xxx/xxx.git
-git push -u origin main
-```
-Ces lignes peuvent être copiées / collées telles quelles dans le terminal pour y être éxécutées.
+  Le projet vide peut à présent être synchronisé avec votre projet local (ouvert dans VSCode).
+
+  La page du repository sur GitHub propose les lignes suivantes :
+  ```
+  echo "# xxx" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin git@github.com:xxx/xxx.git
+  git push -u origin main
+  ```
+  Ces lignes peuvent être copiées / collées telles quelles dans le terminal pour y être éxécutées. Elles réaliseront les opérations suivantes :
+  - Création d'un fichier README.md (si inexistant) avec "# xxx" pour contenu.
+  - Initialisation de git dans le répertoire local courant.
+  - Ajout de la création / modification de README.md via un commit nommé "first commit"
+  - Renommage de la branche (généralement nommée "master") en "main"
+  - Ajout de l'url distante git@github...
+  - Transfert des "commits" depuis la machine vers le serveur (GitHub) 
+
+  Lorsque l'opération "push" est terminée, votre dossier local est à présent synchronisé avec git.
+
+  L'onglet "source control" de VSCode permet désormais de réaliser les opérations "commit" & "push".
 
 
 <br><br>
