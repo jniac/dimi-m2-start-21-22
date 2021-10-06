@@ -61,8 +61,6 @@ git version 2.30.1 (Apple Git-130)
 ### Git sur Macbook M1
 L'installation de git peut être complexe sur les Macbook M1 (dernière génération). Pour l'activation de rosetta, homebrew et git, [voir cet article (en anglais)](https://blog.logrocket.com/set-up-macbook-for-web-development-in-20-minutes/).
 
-<br><br>
-
 ### user.name & user.email
 Il arrive que git refuse les "commits" parce qu'il lui manque 2 informations : 
 - l'email associé à l'utilisateur
