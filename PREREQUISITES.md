@@ -75,6 +75,8 @@ git config --global user.name "mon super pseudo"
 git config --global user.email "mon.email@domain.com"
 ```
 
+<br><br>
+
 ## 3. GitHub
 
 - [GitHub](https://github.com/)
