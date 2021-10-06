@@ -35,3 +35,17 @@ p span {
   border-radius: 16px;
   padding: 16px;
 }
+
+.bounce {
+  animation: bounce-anim 1s linear;
+}
+
+@keyframes bounce-anim {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
