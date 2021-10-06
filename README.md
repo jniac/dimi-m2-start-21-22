@@ -71,6 +71,18 @@ L'installation de git peut être complexe sur les Macbook M1 (dernière généra
 
 <br><br>
 
+#### user.name & user.email
+Il arrive que git refuse les "commits" parce qu'il lui manque 2 informations : 
+- l'email associé à l'utilisateur
+- ainsi que le nom
+Il faut alors saisir dans le terminal :
+```shell
+git config --global user.name "mon super pseudo"
+```
+```shell
+git config --global user.email "mon.email@domain.com"
+```
+
 ### 3. GitHub
 
 - [GitHub](https://github.com/)
