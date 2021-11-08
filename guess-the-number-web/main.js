@@ -34,6 +34,8 @@ const submit = () => {
 
     cloneResponse(input.value, `EXACT!!!`)
   }
+
+  input.value = ''
 }
 
 document.querySelector('button#submit').onclick = () => {
