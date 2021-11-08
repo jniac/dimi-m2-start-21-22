@@ -1,4 +1,4 @@
-const mysteryNumber = 50
+const mysteryNumber = Math.round(Math.random() * 100)
 
 const response = document.querySelector('div.response')
 response.remove()
@@ -10,7 +10,7 @@ const cloneResponse = (inputValue, commentValue) => {
   clone.querySelector('span.comment').innerHTML = commentValue
 }
 
-const testInput = () => {
+const submit = () => {
   const input = document.querySelector('input')
   const inputNumber = parseFloat(input.value)
 
@@ -24,13 +24,28 @@ const testInput = () => {
 
   } else if (inputNumber < mysteryNumber) {
 
-    // etc.
+    cloneResponse(input.value, `Trop petit.`)
 
+  } else if (inputNumber > mysteryNumber) {
+
+    cloneResponse(input.value, `Trop grand.`)
+
+  } else if (inputNumber === mysteryNumber) {
+
+    cloneResponse(input.value, `EXACT!!!`)
   }
 }
 
 document.querySelector('button#submit').onclick = () => {
-  testInput()
+  submit()
 }
+
+document.body.onkeydown = (event) => {
+  if (event.key === 'Enter') {
+    submit()
+  }
+}
+
+
 
 
