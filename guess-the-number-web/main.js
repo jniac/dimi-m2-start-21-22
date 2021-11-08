@@ -14,13 +14,17 @@ const submit = () => {
   const input = document.querySelector('input')
   const inputNumber = parseFloat(input.value)
 
+  document.body.classList.remove('wrong-state')
+
   if (isNaN(inputNumber)) {
 
     cloneResponse(input.value, `Ceci n'est pas un nombre`)
+    document.body.classList.add('wrong-state')
 
   } else if (inputNumber < 0 || inputNumber > 100) {
 
     cloneResponse(input.value, `Le nombre doit être compris entre 0 et 100.`)
+    document.body.classList.add('wrong-state')
 
   } else if (inputNumber < mysteryNumber) {
 
