@@ -1,37 +1,36 @@
+const mysteryNumber = 50
 
-// INIT
+const response = document.querySelector('div.response')
+response.remove()
 
-const mysteryNumber = Math.round(Math.random() * 100)
+const cloneResponse = (inputValue, commentValue) => {
+  const clone = response.cloneNode(true)
+  document.body.append(clone)
+  clone.querySelector('span.input').innerHTML = inputValue
+  clone.querySelector('span.comment').innerHTML = commentValue
+}
 
-// je récupère, mémorise et supprime le nœud div.response
-const responseElement = document.querySelector('div.response')
-responseElement.remove()
+const testInput = () => {
+  const input = document.querySelector('input')
+  const inputNumber = parseFloat(input.value)
 
-const inputElement = document.querySelector('input')
+  if (isNaN(inputNumber)) {
 
+    cloneResponse(input.value, `Ceci n'est pas un nombre`)
 
+  } else if (inputNumber < 0 || inputNumber > 100) {
 
-// RUNTIME
+    cloneResponse(input.value, `Le nombre doit être compris entre 0 et 100.`)
 
-inputElement.onchange = (event) => {
-  
-  let x = inputElement.value
+  } else if (inputNumber < mysteryNumber) {
 
-  x = parseFloat(x)
+    // etc.
 
-  if (Number.isNaN(x)) {
-
-    const clone = responseElement.cloneNode(true)
-    document.body.append(clone)
-    clone.querySelector('span.input').innerHTML = x
-    clone.querySelector('span.comment').innerHTML = `Ceci n'est pas un nombre "${inputElement.value}"`
-
-  } else if (x < 0 || x > 100) {
-
-  } else if (x < mysteryNumber) {
-
-  } else if (x > mysteryNumber) {
-
-  } else if (x == mysteryNumber) {
   }
 }
+
+document.querySelector('button#submit').onclick = () => {
+  testInput()
+}
+
+
