@@ -24,7 +24,7 @@ inputElement.onchange = (event) => {
     const clone = responseElement.cloneNode(true)
     document.body.append(clone)
     clone.querySelector('span.input').innerHTML = x
-    clone.querySelector('span.comment').innerHTML = 'Wrong input!!!'
+    clone.querySelector('span.comment').innerHTML = `Ceci n'est pas un nombre "${inputElement.value}"`
 
   } else if (x < 0 || x > 100) {
 
