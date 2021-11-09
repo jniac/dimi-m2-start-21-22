@@ -1,0 +1,19 @@
+.App {
+  min-height: 100vh;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+}
+
+.Response {
+  padding: 8px;
+}
+
+.Response span.input {
+  padding-right: 8px;
+}
