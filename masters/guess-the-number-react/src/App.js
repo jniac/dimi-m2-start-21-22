@@ -1,15 +1,6 @@
 import React from 'react'
 import './App.css'
 
-const Response = ({ inputValue, commentValue }) => {
-  return (
-    <div className="Response">
-      <span class="input">{inputValue}</span>
-      <span class="comment">{commentValue}</span>
-    </div>
-  )
-}
-
 const inputToComment = (input, mysteryNumber) => {
   const inputNumber = parseFloat(input)
   if (isNaN(inputNumber)) {
@@ -29,6 +20,19 @@ const inputToComment = (input, mysteryNumber) => {
   }
 }
 
+const Response = ({ index, inputValue, mysteryNumber, bigger }) => {
+
+  const comment = inputToComment(inputValue, mysteryNumber)
+
+  return (
+    <div className="Response" style={{ fontSize: bigger ? '2em' : '1em' }}>
+      <span className="index">#{index}</span>
+      <span className="input">{inputValue || '\u00A0'}</span>
+      <span className="comment">{comment}</span>
+    </div>
+  )
+}
+
 const App = () => {
   
   const inputRef = React.useRef()
@@ -45,10 +49,14 @@ const App = () => {
       <h1>"Guess the number"</h1>
       <input 
         ref={inputRef}
-        placeholder="saisir un nombre"
+        placeholder="un nombre"
         onKeyDown={event => {
-          if (event.key === 'Enter') {
+          if (event.code === 'Enter') {
             submit()
+          }
+          if (event.code === 'Space' && event.shiftKey) {
+            event.preventDefault()
+            inputRef.current.value = mysteryNumber
           }
         }}
       />
@@ -57,12 +65,13 @@ const App = () => {
         onClick={() => submit()}
       >OK</button>
       {inputs.slice(-5).reverse().map((input, index) => {
-        const comment = inputToComment(input, mysteryNumber)
         return (
           <Response
-            key={index}
+            key={inputs.length - index}
+            bigger={index === 0}
+            index={inputs.length - index}
             inputValue={input}
-            commentValue={comment}
+            mysteryNumber={mysteryNumber}
           />
         )
       })}

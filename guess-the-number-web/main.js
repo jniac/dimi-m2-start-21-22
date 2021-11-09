@@ -6,7 +6,7 @@ response.remove()
 const cloneResponse = (inputValue, commentValue) => {
   const clone = response.cloneNode(true)
   document.body.append(clone)
-  clone.querySelector('span.input').innerHTML = inputValue
+  clone.querySelector('span.input').innerHTML = inputValue || '&nbsp;'
   clone.querySelector('span.comment').innerHTML = commentValue
 }
 
