@@ -4,6 +4,7 @@
 
 Aperçu des projets (GitHub Pages) : 
 - [guess-the-number-console](https://jniac.github.io/dimi-start-2021/guess-the-number-console/)
+- [guess-the-number-web](https://jniac.github.io/dimi-start-2021/guess-the-number-web/)
 
 <br><br>
 
