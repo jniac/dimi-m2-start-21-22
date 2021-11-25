@@ -2,9 +2,12 @@
 
 [lien vers projet de référence (ce même projet)](https://github.com/jniac/dimi-start-2021)
 
-Aperçu des projets (GitHub Pages) : 
+Aperçu des projets référents (GitHub Pages) : 
 - [guess-the-number-console](https://jniac.github.io/dimi-start-2021/guess-the-number-console/)
 - [guess-the-number-web](https://jniac.github.io/dimi-start-2021/guess-the-number-web/)
+
+Liens vers le projet collaboratif (rendus).
+- [jniac/dimi-m2-work-21-22](https://github.com/jniac/dimi-m2-work-21-22)
 
 <br><br>
 
